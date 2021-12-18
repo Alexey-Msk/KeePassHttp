@@ -12,7 +12,7 @@ del KeePassHttp.plgx
 del mono\KeePassHttp.dll
 rd /s /q KeePassHttp\bin
 rd /s /q KeePassHttp\obj
-"%ProgramFiles(x86)%\KeePass Password Safe 2\KeePass.exe" --plgx-create %base%KeePassHttp
+"E:\Alexey\Projects\_Anothers\KeePass\KeePass_Dev\KeePass.exe" --plgx-create %base%KeePassHttp --plgx-prereq-kp:2.34 --plgx-prereq-net:4
 %netframework%MSBuild.exe /target:clean KeePassHttp.sln
 %netframework%MSBuild.exe /p:Configuration=Release KeePassHttp.sln
 copy /y KeePassHttp\bin\Release\KeePassHttp.dll mono
