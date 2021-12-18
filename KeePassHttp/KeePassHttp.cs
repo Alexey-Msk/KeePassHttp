@@ -54,8 +54,6 @@ namespace KeePassHttp
         private volatile bool stopped = false;
         Dictionary<string, RequestHandler> handlers = new Dictionary<string, RequestHandler>();
 
-        //public string UpdateUrl = "";
-        public override string UpdateUrl { get { return "https://passifox.appspot.com/kph/latest-version.txt"; } }
 
         private SearchParameters MakeSearchParameters()
         {
